@@ -1,0 +1,106 @@
+The LayoutManagers are used to arrange components in a particular manner.
+ LayoutManager is an interface that is implemented by all the classes of layout managers.
+  There are following classes that represents the layout managers:
+
+java.awt.BorderLayout
+java.awt.FlowLayout
+java.awt.GridLayout
+java.awt.CardLayout
+java.awt.GridBagLayout
+javax.swing.BoxLayout
+javax.swing.GroupLayout
+javax.swing.ScrollPaneLayout
+javax.swing.SpringLayout etc.
+
+
+		**BorderLayout**
+		
+		
+The BorderLayout is used to arrange the components in five regions:
+ north, south, east, west and center. Each region (area) may contain one component only. It is the default layout of frame or window.
+  The BorderLayout provides five constants for each region:
+
+public static final int NORTH
+public static final int SOUTH
+public static final int EAST
+public static final int WEST
+public static final int CENTER
+Constructors of BorderLayout class:
+
+BorderLayout(): creates a border layout but with no gaps between the components.
+JBorderLayout(int hgap, int vgap): creates a border layout with the given horizontal and vertical gaps between the components.
+
+Following are the fields for java.awt.BorderLayout class:
+
+static String AFTER_LAST_LINE -- Synonym for PAGE_END.
+
+static String AFTER_LINE_ENDS -- Synonym for LINE_END.
+
+static String BEFORE_FIRST_LINE -- Synonym for PAGE_START.
+
+static String BEFORE_LINE_BEGINS -- Synonym for LINE_START.
+
+static String CENTER -- The center layout constraint (middle of container).
+
+static String EAST -- The east layout constraint (right side of container).
+
+static String LINE_END -- The component goes at the end of the line direction for the layout.
+
+static String LINE_START -- The component goes at the beginning of the line direction for the layout.
+
+static String NORTH -- The north layout constraint (top of container).
+
+static String PAGE_END -- The component comes after the last line of the layout's content.
+
+static String PAGE_START -- The component comes before the first line of the layout's content.
+
+static String SOUTH -- The south layout constraint (bottom of container).
+
+static String WEST -- The west layout constraint (left side of container).
+
+
+		**Grid Layout**
+		
+The GridLayout is used to arrange the components in rectangular grid. One component is displayed in each rectangle.
+Constructors of GridLayout class:
+
+GridLayout(): creates a grid layout with one column per component in a row.
+GridLayout(int rows, int columns): creates a grid layout with the given rows and columns but no gaps between the components.
+GridLayout(int rows, int columns, int hgap, int vgap): creates a grid layout with the given rows and columns alongwith given horizontal and vertical gaps.
+
+		**Flow Layout**
+		
+The FlowLayout is used to arrange the components in a line, one after another (in a flow). It is the default layout of applet or panel.
+Fields of FlowLayout class:
+
+static int CENTER -- This value indicates that each row of components should be centered.
+
+static int LEADING -- This value indicates that each row of components should be justified to the leading edge of the container's orientation, for example, to the left in left-to-right orientations.
+
+static int LEFT -- This value indicates that each row of components should be left-justified.
+
+static int RIGHT -- This value indicates that each row of components should be right-justified.
+
+static int TRAILING -- This value indicates that each row of components should be justified to the trailing edge of the container's orientation, for example, to the right in left-to-right orientations.
+Constructors of FlowLayout class:
+
+FlowLayout(): creates a flow layout with centered alignment and a default 5 unit horizontal and vertical gap.
+FlowLayout(int align): creates a flow layout with the given alignment and a default 5 unit horizontal and vertical gap.
+FlowLayout(int align, int hgap, int vgap): creates a flow layout with the given alignment and the given horizontal and vertical gap.
+
+		**Box Layout **
+		
+The BoxLayout is used to arrange the components either vertically or horizontally. For this purpose, BoxLayout provides four constants. They are as follows:
+Note: BoxLayout class is found in javax.swing package.
+
+Fields of BoxLayout class:
+
+public static final int X_AXIS
+public static final int Y_AXIS
+public static final int LINE_AXIS
+public static final int PAGE_AXIS
+Constructor of BoxLayout class:
+
+BoxLayout(Container c, int axis): creates a box layout that arranges the components with the given axis.
+
+
