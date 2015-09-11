@@ -6,26 +6,49 @@ public class Mergesortcormen
 {
         public static void main(String[] args)
         {long l= timecomplex.starttime();
+        int choice;
+        @SuppressWarnings("resource")
+		Scanner s1 = new Scanner(System.in);
                 System.out.println("Merge Sort");
 
                 System.out.println("Enter number of elements in the array");
-                @SuppressWarnings("resource")
-				int array_elements = (new Scanner(System.in)).nextInt();
+            
+				int n=s1.nextInt();
              
-                if (array_elements < 2)
+                if (n < 2)
                 {
                         System.out.println("Number of elements in the array should be greater or equal 2");
                 }
                 else
                 {
-                                                int[] A = new int[array_elements];
-                      getinput g1 = new getinput();  
-                      A =  g1.worstcaseinput(array_elements);
-
-                        //System.out.println("Unsorted array");
-                      
-                        mergeSort(A, 0, A.length-1);
-                     g1.doprintinput(A, array_elements);  
+                      int[] a = new int[n];
+                      getinput ssrt = new getinput();
+                    System.out.println("Enter Options From Below");
+          			
+          			System.out.println("1.Best Case(Takes input in increasing order from 1 to " + n + ")");
+          			System.out.println("2.Worst Case(Takes input in decreasing order from " + n + " to 1)");
+          			System.out.println("3.Average Case(Takes input in random order from for " + n + " numbers)");
+          			
+          			choice = s1.nextInt();
+          			
+          			switch(choice){
+          			case 1:
+          				a=ssrt.besttcaseinput(n);
+          				break;
+          			case 2:
+          				a=ssrt.worstcaseinput(n);
+          				break;
+          			case 3:
+          				a = ssrt.getrandominput(n);
+          				break;		
+          			}
+          				
+          			System.out.println("Input Array is: ");
+          			ssrt.doprintinput(a, n);			
+                                       
+                     mergeSort(a, 0, n-1);
+                 	System.out.println("Sorted array is: ");
+                     ssrt.doprintinput(a,n);  
 
                       
                 }
