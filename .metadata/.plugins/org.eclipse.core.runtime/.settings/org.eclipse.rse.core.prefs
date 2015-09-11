@@ -1,4 +1,3 @@
-activeuserprofiles=DESKTOP-GKQ63MS;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=abhis
-useridperkey=DESKTOP-GKQ63MS.Local\=abhis;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=abhis_000
+useridperkey=hp.Local\=abhis_000;

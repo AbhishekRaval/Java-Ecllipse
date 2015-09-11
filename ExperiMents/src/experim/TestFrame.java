@@ -1,7 +1,6 @@
 package experim;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class TestFrame {
 

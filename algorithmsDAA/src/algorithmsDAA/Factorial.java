@@ -5,7 +5,8 @@ public class Factorial {
 
    public static void main(String[] args) {
 	   
-       Scanner scanner = new Scanner(System.in);
+       @SuppressWarnings("resource")
+	Scanner scanner = new Scanner(System.in);
        System.out.print("Enter the number whose factorial is to be found: ");
        int n = scanner.nextInt();
        long lStartTime = System.nanoTime();

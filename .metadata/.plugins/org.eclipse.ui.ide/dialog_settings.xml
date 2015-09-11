@@ -5,12 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="E:\Devel\Java-Ecllipse\clrs-examples"/>
-			<item value="E:\Devel\Java-Ecllipse\algorithmsDAA"/>
-			<item value="E:\Devel\Java-Ecllipse\College_Programs"/>
-			<item value="E:\Devel\Java-Ecllipse\jAspiration"/>
-			<item value="E:\Devel\Java-Ecllipse\ExperiMents"/>
-			<item value="E:\Devel\Java-Ecllipse\graphicsWithJava"/>
+			<item value="A:\Abhi-52\Lang\Java\Java-Ecllipse"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
